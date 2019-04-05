@@ -506,9 +506,9 @@ public class SynchronizationManager: PersistenceIntegration {
             var fieldValue = entry.fields[fieldName]
 
             // handle symbol arrays
-            if let array = fieldValue as? [Any] {
-                fieldValue = NSKeyedArchiver.archivedData(withRootObject: array)
-            }
+//            if let array = fieldValue as? [Any] {
+//                fieldValue = NSKeyedArchiver.archivedData(withRootObject: array)
+//            }
 
             persistable.setValue(fieldValue, forKey: propertyName)
         }
